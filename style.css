@@ -12,9 +12,12 @@ body {
     background: #2f2f2f;
     font-family: monospace;
     color: #ffffff;
+    overflow: hidden;
+
 }
 section {
     position: relative;
+    
 }
 
 section::before {
@@ -52,6 +55,7 @@ section::after {
     border-radius: 10px;
     z-index: 10;
     backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
     border: 1px solid rgba(255, 255, 255, .5) ;
     border-right: 1px solid rgba(255, 255, 255, .2) ;
     border-bottom: 1px solid rgba(255, 255, 255, .2) ;
